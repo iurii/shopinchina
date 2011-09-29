@@ -27,6 +27,32 @@ color: #6D6D6D;
   })();
 
 </script>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkform ( form )
+{
+
+  if (form.email.value == "") {
+    alert( "Please enter your email address." );
+    form.email.focus();
+    return false ;
+  }
+    if (form.item_desc.value == "") {
+    alert( "Please enter your email address." );
+    form.email.focus();
+    return false ;
+  }
+      if (form.item_desc.value == "Example: "I'd like to find Chinese cats with fluffy tales"") {
+    alert( "You don't want to look for that!" );
+    form.email.focus();
+    return false ;
+  }
+
+  return true ;
+}
+//-->
+</script>
   
 </head>
 <body>
@@ -38,10 +64,10 @@ color: #6D6D6D;
       
       <p>
         <h3>Describe the item you're looking for</h3>
-        <form action="mailto:yuriy.palamarchuk@gmail.com" method="post" enctype="text/plain" >
-        <textarea rows="10" cols="60" name="Content"> Example: "I'd like to find Chinese cats with fluffy tales"</textarea>
+        <form action="mailto:yuriy.palamarchuk@gmail.com" method="post" enctype="text/plain" onsubmit="return checkform(this);">
+        <textarea rows="10" cols="60" name="item_desc">Example: "I'd like to find Chinese cats with fluffy tales"</textarea>
         <br />
-        Enter your e-mail:<input type="text" name="Email">
+        Enter your e-mail: <input type="text" name="email">
         <input type="submit" name="submit" value="Submit">
         </form> 
       </p>
