@@ -11,7 +11,7 @@
     {
      margin: 0;
      padding: 0;
-     padding-top: 10px;
+     padding-top: 30px;
      text-align: center;
     }
     #centered
@@ -23,13 +23,44 @@
      margin: 0 auto;
     } 
   
-  
- .taobao_desc {
-width: 974px;
-text-align: left;
-padding-left: 0px;
-color: #6D6D6D;
- }
+    .taobao_desc {
+    width: 974px;
+    text-align: left;
+    padding-left: 0px;
+    color: #6D6D6D;
+     }
+     
+    #menu {
+      position: relative;
+      padding-top: 10px;
+      text-align: right;
+      font-size: 14pt;
+      font-style: italic;
+     
+    }
+    
+    #recent_sells {
+       height: 115px;
+    }
+     
+    #three_steps {
+    width: 973px;
+    background-color: #f2f2f2;
+    color: #000000;
+    height: 600px;
+    border-top: dashed 1px grey;
+    border-bottom: dashed 1px grey;
+    }
+    
+    #three_steps .title{
+      padding-left: 10px;
+      padding-top: 5px;
+     
+    }
+ 
+ 
+ 
+ 
   </style>
   
 <script type="text/javascript">
@@ -80,7 +111,7 @@ function checkform ( form )
      <div>
        <img src="images/shopinchina_logo1.jpg" align="left"/>
      <div>
-     <div style="position: relative; padding-top: 10px; text-align: right; font-size: 14pt; font-style: italic; font-color: black;">
+     <div id="menu">
       Delivery &nbsp;    Payment  &nbsp;  FAQ  &nbsp;  About us
      </div>  
    </div>
@@ -89,11 +120,9 @@ function checkform ( form )
      
    <div class="taobao_desc">
     
-    
-    
       <img src="images/shopinchina_banner1.jpg" />
       
-     <div style="height: 115px;">
+     <div id="recent_sells">
       Resent sells <br />
      <img src="images/product1.jpg" style="padding-left: 60px;">
      <img src="images/product2.jpg" style="padding-left: 60px;"/>
@@ -103,11 +132,40 @@ function checkform ( form )
      </div>
       <br />
       
-      <div style="width: 973px; background-color: #f2f2f2; height: 300px;">
+      <div id="three_steps">
       <img src="images/three_steps1.jpg" style="padding-left: 60px; padding-top: 30px;"/>
+        <div style="padding-top: 10px; color: black; font-style: italic;">
+          <span style="padding-left: 90px;">Fill the form below, press "Send"</span> <span style="padding-left: 90px;">Check e-mail, see the price</span> <span style="padding-left: 90px;">Make the transfer, get your stuff</span>
+        </div>
+        
+        <div style="">
+          
+          <div style="padding-left: 190px; padding-top: 80px;">
+            
+        <form action="mailto:yuriy.palamarchuk@gmail.com" method="post" enctype="text/plain" onsubmit="return checkform(this);">
+       <table>
+        <tr>
+          <td>
+        <span class="title">Full name</span> <br /> <input type="text" name="fullname" size="35"> <br />
+        <span class="title">E-mail</span> <br /> <input type="text" name="email" size="35"> <br />
+        <span class="title">Phone number</span> <span style="color: grey;">(just in case)</span>  <br /> <input type="text" name="phone" size="35"> <br />
+          </td>
+          <td>
+        <span style="padding-left: 40px;"> <textarea rows="7" cols="50" name="item_desc">Example: "I'd like to find Chinese cats with fluffy tales"</textarea> </span>
+          </td>
+        </tr>
+       </table>
+        </form> 
+
+          </div>
+          
+          
+        </div>
       </div>
        <br />
         <br />
+        
+        
       <p>
         <h3>Describe the item you're looking for</h3>
         <form action="mailto:yuriy.palamarchuk@gmail.com" method="post" enctype="text/plain" onsubmit="return checkform(this);">
