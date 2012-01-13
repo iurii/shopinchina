@@ -58,6 +58,42 @@
       font-size: 11pt;
     }
     
+div.send_btn {
+height: 18px;
+width: 61px;
+margin:0;
+padding:0;
+background-image:url("images/send_btn_over.jpg");
+}
+
+div.send_btn a, div.send_btn a:link, div.send_btn a:visited {
+display:block;
+}
+
+div.send_btn img {
+width:100%;
+height:100%;
+border:0;
+}
+
+div.send_btn a:hover img {
+visibility:hidden;
+}
+  
+.button {
+    font-size: 9pt;
+    color: white;
+    border-bottom: 1px solid #ff8800;
+    border-right: 1px solid #ff8800;
+    background: #ffb200;
+}
+
+.button:hover {
+  
+    background: #ff9e00;
+}
+    
+    
 
  
  
@@ -162,7 +198,12 @@ function checkform ( form )
         <span style="padding-left: 40px;"> <textarea rows="6" cols="50" name="item_desc" style="color: grey;">Example: "I'd like to find Chinese cats with fluffy tales"</textarea> </span>
           </td>
         </tr>
+        <tr>
+          <td></td>
+          <td><input type="submit" name="submit" width="61" height="18" class="button" value="Send" style="float: right;"></td>
+        </tr>
        </table>
+       
         </form> 
 
           </div>
@@ -174,15 +215,7 @@ function checkform ( form )
         <br />
         
         
-      <p>
-        <h3>Describe the item you're looking for</h3>
-        <form action="mailto:yuriy.palamarchuk@gmail.com" method="post" enctype="text/plain" onsubmit="return checkform(this);">
-        <textarea rows="10" cols="60" name="item_desc">Example: "I'd like to find Chinese cats with fluffy tales"</textarea>
-        <br />
-        Enter your e-mail: <input type="text" name="email">
-        <input type="submit" name="submit" value="Submit">
-        </form> 
-      </p>
+
 <p>
 <h3>What is Taobao ?</h3>
 <a href="http://www.taobao.com">Taobao</a> is the web site for online shopping, similar to eBay, Rakuten and Amazon operated in China. <br />
