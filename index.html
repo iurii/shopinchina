@@ -55,7 +55,10 @@
     #three_steps .title{
       padding-left: 10px;
       padding-top: 5px;
+      font-size: 11pt;
     }
+    
+
  
  
  
@@ -133,11 +136,16 @@ function checkform ( form )
       
       <div id="three_steps">
       <img src="images/three_steps1.jpg" style="padding-left: 60px; padding-top: 30px;"/>
-        <div style="padding-top: 10px; color: black; font-style: italic; border-bottom: dashed 1px grey; margin-bottom: 30px;">
+        <div style="padding-top: 10px; color: black; font-style: italic; margin-bottom: 20px;">
           <span style="padding-left: 90px;">Fill the form below, press "Send"</span> <span style="padding-left: 90px;">Check e-mail, see the price</span> <span style="padding-left: 90px;">Make the transfer, get your stuff</span>
         </div>
         
-        <div style="">
+        <!-- Beautiful dashed border -->
+        <div style="border-bottom: dashed 1px grey; width: 845px; margin-left: 59px;">
+        </div>
+        
+        
+        <div>
           
           <div style="padding-left: 190px; padding-top: 80px;">
             
@@ -147,10 +155,11 @@ function checkform ( form )
           <td>
         <span class="title">Full name</span> <br /> <input type="text" name="fullname" size="35"> <br />
         <span class="title">E-mail</span> <br /> <input type="text" name="email" size="35"> <br />
-        <span class="title">Phone number</span> <span style="color: grey;">(just in case)</span>  <br /> <input type="text" name="phone" size="35"> <br />
+        <span class="title">Phone number</span><span style="color: grey; margin-left: -5px;" class="title">(just in case)</span>  <br /> <input type="text" name="phone" size="35"> <br />
           </td>
           <td>
-        <span style="padding-left: 40px;"> <textarea rows="7" cols="50" name="item_desc">Example: "I'd like to find Chinese cats with fluffy tales"</textarea> </span>
+        <span class="title" style="padding-left: 50px;">Additional info</span> <br />
+        <span style="padding-left: 40px;"> <textarea rows="6" cols="50" name="item_desc" style="color: grey;">Example: "I'd like to find Chinese cats with fluffy tales"</textarea> </span>
           </td>
         </tr>
        </table>
