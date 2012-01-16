@@ -185,17 +185,23 @@ function checkform ( form )
           
           <div style="padding-left: 190px; padding-top: 80px;">
             
-        <form action="mailto:yuriy.palamarchuk@gmail.com" method="post" enctype="text/plain" onsubmit="return checkform(this);">
+        <script type="text/javascript">var submitted=false;</script>
+<iframe name="hidden_iframe" id="hidden_iframe"
+style="display:none;" onload="if(submitted)
+{window.location='http://shopinchina.co/thankyou.html';}"></iframe>
+<form action="https://docs.google.com/a/shopinchina.co/spreadsheet/formResponse?formkey=dEhIa21sTERoa3h5YXQ3WmhyZEFTVHc6MQ&amp;ifq" method="post"
+target="hidden_iframe" onsubmit="submitted=true;">
        <table>
         <tr>
           <td>
-        <span class="title">Full name</span> <br /> <input type="text" name="fullname" size="35"> <br />
-        <span class="title">E-mail</span> <br /> <input type="text" name="email" size="35"> <br />
-        <span class="title">Phone number</span><span style="color: grey; margin-left: -5px;" class="title">(just in case)</span>  <br /> <input type="text" name="phone" size="35"> <br />
+        <span class="title">Full name</span> <br /> <input type="text" name="entry.0.single" size="35" id="entry_0"> <br />
+        <span class="title">E-mail</span> <br /> <input type="text" name="entry.2.single" size="35" id="entry_2"> <br />
+        <span class="title">Phone number</span><span style="color: grey; margin-left: -5px;" class="title">(just in case)</span>  <br />
+        <input type="text" name="phone" size="35" name="entry.1.single" id="entry_1"> <br />
           </td>
           <td>
         <span class="title" style="padding-left: 50px;">Additional info</span> <br />
-        <span style="padding-left: 40px;"> <textarea rows="6" cols="50" name="item_desc" style="color: grey;">Example: "I'd like to find Chinese cats with fluffy tales"</textarea> </span>
+        <span style="padding-left: 40px;"> <textarea rows="6" cols="50" name="entry.4.single" style="color: grey;" id="entry_4">Example: "I'd like to find Chinese cats with fluffy tales"</textarea> </span>
           </td>
         </tr>
         <tr>
@@ -213,9 +219,6 @@ function checkform ( form )
       </div>
        <br />
         <br />
-        
-        
-<form action="https://docs.google.com/a/shopinchina.co/spreadsheet/formResponse?formkey=dEhIa21sTERoa3h5YXQ3WmhyZEFTVHc6MQ&amp;ifq" method="POST" id="ss-form">
 
 <input type="text" name="entry.0.single" value="" class="ss-q-short" id="entry_0">
 <input type="text" name="entry.2.single" value="" class="ss-q-short" id="entry_2">
