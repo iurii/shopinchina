@@ -23,9 +23,27 @@
     text-align: left;
     padding-left: 0px;
     color: #6D6D6D;
+    font-size: 11pt;
      }
-    .taobao_desc header {
-    color: #6D6D6D;
+     
+    .taobao_desc .header {
+    color: #000000;
+    font-weight: bold;
+    font-style: oblique;
+    
+     }
+     
+    .taobao_desc .header_faq {
+    color: #f5a73b;
+    font-weight: bold;
+    font-style: oblique;
+    
+     }
+     
+    .taobao_desc .p_faq {
+    width: 950px;
+    color: #000000;
+    font-style: oblique;
      }
      
     #menu {
