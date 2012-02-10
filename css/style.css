@@ -67,6 +67,15 @@
        text-decoration: underline;
        color: #f5a73b; 
     }
+
+    .delivery_desc {
+	padding-left: 20px; padding-bottom: 20px;
+    }
+    .delivery_desc p {
+	padding-top: 20px;
+	padding-bottom: 10px;
+	padding-left: 50px;
+    }
      
     #menu {
       position: relative;
