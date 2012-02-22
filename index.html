@@ -49,6 +49,28 @@
       
      <div id="recent_sells">
       Resent sells <br />
+      <div class="contents" style="width:520px;  margin:0px auto;">
+<style>#_animateSam img{float:left;}</style>
+<script src="jquery-1.4.2.min.js"></script>
+
+<div id="_animateSam" style="width:500px; height:200px; overflow:hidden;">
+    <div style="width:2500px; height:295px;">
+    <img src="01.jpg" /><img src="images/product1.jpg" /><img src="images/product2.jpg" />
+		<img src="images/product3.jpg" /><img src="images/product4.jpg" />
+</div>
+</div>
+
+<script type='text/javascript'>
+
+    var _$cnt=1;
+    function next()
+    {
+	    $('#_animateSam').animate( {'scrollLeft':500*_$cnt++},500);
+	    if(_$cnt>4){_$cnt=0;}
+    }
+    window.setInterval('next()',3000)
+  </script>
+</div>
      <img src="images/product1.jpg" style="padding-left: 60px;">
      <img src="images/product2.jpg" style="padding-left: 60px;"/>
      <img src="images/product3.jpg" style="padding-left: 60px;"/>
