@@ -57,6 +57,7 @@
     <div style="width:600px; height:295px;">
     <img src="images/product1.jpg"" /><img src="images/product2.jpg" /><img src="images/product3.jpg" />
 		<img src="images/product4.jpg" /><img src="images/product5.jpg" />
+                
 </div>
 </div>
 
@@ -65,7 +66,7 @@
     var _$cnt=1;
     function next()
     {
-	    $('#_animateSam').animate( {'scrollLeft':500*_$cnt++},500);
+	    $('#_animateSam').animate( {'scrollLeft':120*_$cnt++},120);
 	    if(_$cnt>4){_$cnt=0;}
     }
     window.setInterval('next()',3000)
