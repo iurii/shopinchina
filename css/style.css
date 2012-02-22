@@ -68,6 +68,10 @@
        color: #f5a73b; 
     }
     
+    .rotator {
+	text-align: center;
+    }
+    
     .rotator img {
 	padding-left: 55px;
     }
