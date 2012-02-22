@@ -67,6 +67,10 @@
        text-decoration: underline;
        color: #f5a73b; 
     }
+    
+    .rotator img {
+	padding-left: 90px;
+    }
 
     .delivery_desc {
 	padding-left: 20px; padding-bottom: 20px;
