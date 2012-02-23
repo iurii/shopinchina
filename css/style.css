@@ -68,13 +68,19 @@
        color: #f5a73b; 
     }
     
-    .rotator {
+    .rotator td {
 	text-align: center;
+	padding-left: 55px;
     }
     
     .rotator img {
-	padding-left: 55px;
+	padding-left: 0px;
     }
+    
+     #recent_sells_tab {
+	width: 107px;
+	text-align: center;
+     }
 
     .delivery_desc {
 	padding-left: 20px; padding-bottom: 20px;
