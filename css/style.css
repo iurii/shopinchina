@@ -68,6 +68,10 @@
        color: #f5a73b; 
     }
     
+    .rotator {
+       padding-right: 100px;
+    }
+    
     .rotator td {
 	text-align: center;
 	padding-left: 60px;
